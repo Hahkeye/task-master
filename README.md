@@ -22,7 +22,7 @@ To get this up and runing simply download the repo. Extract and navigate your br
 ![npm](./docs/npminstall.png)
 
 ## Usage
-Very simple to use first navigate to the folder where it was extracted to. Next run `node index`.
+Very simple to use first navigate to the folder where it was extracted to. Next run `npm start`.
 
 ![Step1](./docs/step1.png)
 

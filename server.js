@@ -16,8 +16,8 @@ function update(data){//updates the "db"
 }
 
 function remove(id){//removes a task and updates the db
-  let temp = noteData['tasks'].filter(task => task.id!=id);
-  noteData['tasks']=temp;
+  // let temp = noteData['tasks'].filter(task => task.id!=id);
+  noteData['tasks']=noteData['tasks'].filter(task => task.id!=id);
   update(noteData);
 }
 
@@ -34,18 +34,16 @@ app.get('/notes', (req, res) => {
 app.get('/api/notes', (req, res) => res.json(noteData['tasks']));
 
 app.post('/api/notes', (req,res) =>{
-    req.body['id']=noteData['idCounter']+1;
-    noteData['idCounter']+=1;
-    noteData['tasks'].push(req.body);
-    res.json(req.body);
-    update(noteData);
+  noteData['idCounter']+=1;
+  req.body['id']=noteData['idCounter'];
+  noteData['tasks'].push(req.body);
+  update(noteData);
+  res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
 app.delete('/api/notes/:id',(req,res) =>{
   remove(req.params.id);
   res.sendFile(path.join(__dirname, '/public/notes.html'));
-  
-
 });
 
 app.get('*', (req, res) => {
