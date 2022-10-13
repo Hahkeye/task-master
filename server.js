@@ -20,6 +20,7 @@ function remove(id){//removes a task and updates the db
   noteData['tasks']=temp;
   update(noteData);
 }
+
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
