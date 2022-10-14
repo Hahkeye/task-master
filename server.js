@@ -37,12 +37,12 @@ app.post('/api/notes', (req,res) =>{
   req.body['id']=(noteData['tasks'].length+1);
   noteData['tasks'].push(req.body);
   update(noteData);
-  res.redirect('/public/index.html');
+  res.redirect('/notes.html');
 });
 
 app.delete('/api/notes/:id',(req,res) =>{
   remove(req.params.id);
-  res.redirect('/public/index.html');
+  res.redirect(200,'/notes.html');
 });
 
 app.get('*', (req, res) => {
