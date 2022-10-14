@@ -34,16 +34,15 @@ app.get('/notes', (req, res) => {
 app.get('/api/notes', (req, res) => res.json(noteData['tasks']));
 
 app.post('/api/notes', (req,res) =>{
-  noteData['idCounter']+=1;
-  req.body['id']=noteData['idCounter'];
+  req.body['id']=(noteData['tasks'].length+1);
   noteData['tasks'].push(req.body);
   update(noteData);
-  res.sendFile(path.join(__dirname, '/public/notes.html'));
+  res.redirect('/public/index.html');
 });
 
 app.delete('/api/notes/:id',(req,res) =>{
   remove(req.params.id);
-  res.sendFile(path.join(__dirname, '/public/notes.html'));
+  res.redirect('/public/index.html');
 });
 
 app.get('*', (req, res) => {
