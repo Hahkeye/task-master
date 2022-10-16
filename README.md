@@ -26,14 +26,20 @@ Very simple to use first navigate to the folder where it was extracted to. Next 
 
 ![Step1](./docs/step1.png)
 
-Then follow the prompted messages.
+Then you can control + click the link in the termal. That will take you to the browser.
 
 ![step2](./docs/usage.png)
 
-Next navigate to the dist folder and you will find the genrated html.
+You will be brought to the lander page. To get started press the "Get Started" button.
 
-![step3](./docs/dist.png)
+![step3](./docs/starter.png)
 
 
+Now you are brought to where you can enter the title of the note. Then you can enter the body of the note and save it with the button in the top right.
 
+![step4](./docs/hwoto.png)
+
+You can select what note you would like to view by click the name on the left.
+
+![step5](./docs/switching.png)
 
