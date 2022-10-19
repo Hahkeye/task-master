@@ -10,7 +10,9 @@ Simple task keeping application built with expressjs and node. You can enter the
 - [Description](#description)
 - [Requirements](#requirments)
 - [Installation](#installation)
-- [Usage](#Usage)
+- [Usage](#usage)
+- [Deployed](#deploy)
+
 
 ## Requirments
 
@@ -43,3 +45,7 @@ You can select what note you would like to view by click the name on the left.
 
 ![step5](./docs/switching.png)
 
+
+## Deployed
+
+You can test it out [here](http://mineboss.asuscomm.com:56734/)
