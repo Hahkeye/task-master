@@ -11,7 +11,7 @@ Simple task keeping application built with expressjs and node. You can enter the
 - [Requirements](#requirments)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Deployed](#deploy)
+- [Deployed](#deployed)
 
 
 ## Requirments
